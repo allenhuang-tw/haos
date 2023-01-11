@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form:form action="processForm" method="GET" modelAttribute="userVo">
+	<form:form action="User/processForm" method="GET" modelAttribute="userVo">
 		Email:<form:input path="email"/>
 		Password:<form:input path="password"/>
 		<input type="submit" value="Submit" />

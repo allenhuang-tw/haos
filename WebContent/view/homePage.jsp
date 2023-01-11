@@ -17,12 +17,14 @@
       background-color: rgba( 27, 120, 95, 1);
       margin-top: 50px;
     }
+    .error{color:red}
+    .form{margin: 0 auto;}
   </style>
   <body>
     <nav class="navbar bg-white">
         <div class="container" >
           <a class="navbar-brand" href="#">
-            <img src="../picture/homepage/logo icon.png" class="d-inline-block align-text-top" alt="logo" width="auto" height="auto">
+            <img src="/haos/images/homepage/logo_icon.png" class="d-inline-block align-text-top" alt="logo" width="auto" height="auto">
             HAOS
           </a>
           <ul class="nav justify-content-end">
@@ -63,24 +65,25 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin: 0;"></button>
               <h5 class="modal-title" id="signup" style="margin-right: 45%;">註冊</h5>
             </div>
-            <form:form action="processForm" method="GET" modelAttribute="userVo">
+            <form:form action="User/processForm" method="GET" modelAttribute="userVo" cssClass="form">
              <div class="modal-body" style="margin: 0 auto;">
               <div class="col-xl">
                 <label for="inputEmail4" class="form-label">Email</label>
-                <form:input type="email" class="form-control" id="inputEmail4" path="email"/>
+                <form:input type="email" class="form-control" id="inputEmail4" path="email" style="width:"/>
+                <form:errors path="email" cssClass="error" />
               </div>
               <div class="col-xl">
                 <label for="inputPassword4" class="form-label">密碼</label>
                 <form:input type="password" class="form-control" id="inputPassword4" path="password"/>
               </div>
             </div>
-            <input type="submit" class="btn btn-primary" style="width: 80%; margin: 0 auto;" data-bs-dismiss="modal">送出</input>
+            <input type="submit" class="btn btn-primary" style="width: 80%; margin: 0 auto;" data-bs-dismiss="modal" value="送出" />
             </form:form>
             <hr>
           </div>
         </div>
     </div>
-    <img src="../picture/homepage/hero image.png" width="auto" height="auto">
+    <img src="/haos/images/homepage/hero_image.png" width="auto" height="auto">
     <div class="bg-warning shadow-sm row" style="width: 840px; height: 90px; margin: 0 auto; position: relative;
     bottom: 45px; border-radius:9px; padding: 20px 20px;">
       <select class="form-select" aria-label="select" style="width: 24%; height: 50px;  margin: 0 auto;">
@@ -108,25 +111,25 @@
         <h3>精選推薦</h3>
         <div class="row">
           <div class="card shadow-sm" style="width: 18rem; margin: 0 auto;">
-            <img src="..." class="card-img-top" alt="...">
+            <img class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
           <div class="card shadow-sm" style="width: 18rem; margin: 0 auto;">
-            <img src="..." class="card-img-top" alt="...">
+            <img  class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
           <div class="card shadow-sm" style="width: 18rem; margin: 0 auto;">
-            <img src="..." class="card-img-top" alt="...">
+            <img  class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
           <div class="card shadow-sm" style="width: 18rem; margin: 0 auto;">
-            <img src="..." class="card-img-top" alt="...">
+            <img  class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
@@ -137,25 +140,25 @@
       <h3>平台理念</h3>
       <div class="row">
         <div class="card shadow-sm" style="width: 18rem; margin: 0 auto;">
-          <img src="..." class="card-img-top" alt="...">
+          <img  class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
         <div class="card shadow-sm" style="width: 18rem; margin: 0 auto;">
-          <img src="..." class="card-img-top" alt="...">
+          <img  class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
         <div class="card shadow-sm" style="width: 18rem; margin: 0 auto;">
-          <img src="..." class="card-img-top" alt="...">
+          <img  class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
         <div class="card shadow-sm" style="width: 18rem; margin: 0 auto;">
-          <img src="..." class="card-img-top" alt="...">
+          <img  class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
@@ -166,25 +169,25 @@
       <h3>最新學生評價</h3>
       <div class="row">
         <div class="card shadow-sm" style="width: 18rem; margin: 0 auto;">
-          <img src="..." class="card-img-top" alt="...">
+          <img  class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
         <div class="card shadow-sm" style="width: 18rem; margin: 0 auto;">
-          <img src="..." class="card-img-top" alt="...">
+          <img  class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
         <div class="card shadow-sm" style="width: 18rem; margin: 0 auto;">
-          <img src="..." class="card-img-top" alt="...">
+          <img  class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
         <div class="card shadow-sm" style="width: 18rem; margin: 0 auto;">
-          <img src="..." class="card-img-top" alt="...">
+          <img  class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
@@ -195,16 +198,16 @@
       <h3>合作單位</h3>
       <div class="row">
         <div style="width: 18rem; margin: 0 auto;">
-          <img style="height: 151px;" src="HAOS - Icon _ Image/homepage/partner 3.png" class="card-img-top shadow-sm" alt="...">
+          <img style="height: 151px;" src="/haos/images/homepage/partner 3.png" class="card-img-top shadow-sm" alt="...">
         </div>
         <div style="width: 18rem; margin: 0 auto;">
-          <img style="height: 151px;" src="HAOS - Icon _ Image/homepage/logo-1.png" class="card-img-top shadow-sm" alt="...">
+          <img style="height: 151px;" src="/haos/images/homepage/logo-1.png" class="card-img-top shadow-sm" alt="...">
         </div>
         <div  style="width: 18rem; margin: 0 auto;">
-          <img style="height: 151px;" src="HAOS - Icon _ Image/homepage/partner 1.png" class="card-img-top shadow-sm" alt="...">
+          <img style="height: 151px;" src="/haos/images/homepage/partner 1.png" class="card-img-top shadow-sm" alt="...">
         </div>
         <div style="width: 18rem; margin: 0 auto;">
-          <img style="height: 151px;" src="HAOS - Icon _ Image/homepage/partner 2.png" class="card-img-top shadow-sm" alt="...">
+          <img style="height: 151px;" src="/haos/images/homepage/partner 2.png" class="card-img-top shadow-sm" alt="...">
         </div>
       </div>
     </div>

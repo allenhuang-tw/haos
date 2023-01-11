@@ -1,5 +1,7 @@
 package com.haos.model;
 
+@Entity
+@table("haos_user")
 public class UserVo {
 	
 	private String email;
